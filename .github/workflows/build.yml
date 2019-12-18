@@ -21,7 +21,7 @@ jobs:
         args:  source /opt/setup-android-sdk.sh; ./gradlew assembleDebug
         
     - name: Upload Artifact
-      uses: actions/upload-artifact@@v1
+      uses: actions/upload-artifact@v1
       with:
         name: app
         path: app/build/outputs/apk/debug
